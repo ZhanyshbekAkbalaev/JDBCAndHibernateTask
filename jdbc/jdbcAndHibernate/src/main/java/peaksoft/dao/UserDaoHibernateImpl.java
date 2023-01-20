@@ -1,14 +1,12 @@
 package peaksoft.dao;
 
 import peaksoft.model.User;
+import peaksoft.util.Util;
 
+import java.sql.Connection;
 import java.util.List;
 
 public class UserDaoHibernateImpl implements UserDao {
-
-    public UserDaoHibernateImpl() {
-
-    }
 
     @Override
     public void createUsersTable() {
@@ -21,12 +19,12 @@ public class UserDaoHibernateImpl implements UserDao {
     }
 
     @Override
-    public void saveUser(String name, String lastName, byte age) {
+    public  void   saveUser(String name, String lastName, byte age) {
 
     }
 
     @Override
-    public void removeUserById(long id) {
+    public void   removeUserById(long id) {
 
     }
 
@@ -37,6 +35,5 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public void cleanUsersTable() {
-
     }
 }
